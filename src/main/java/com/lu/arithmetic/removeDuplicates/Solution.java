@@ -23,10 +23,10 @@ public class Solution {
       }
     }
 //
-//    for (int i=0;i<nums.length ;i++) {
-//      System.out.print(nums[i]);
-//    }
-//    System.out.println();
+    for (int i=0;i<newLength+1 ;i++) {
+      System.out.print(nums[i]);
+    }
+    System.out.println();
     return newLength+1;
   }
 }
