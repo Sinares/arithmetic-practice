@@ -7,10 +7,11 @@ public class ExhaustionSolution {
     for (int i=0;i<weight.length;i++) {
       for (int j=backpackCap;j>=weight[i];j--) {
         fValue[j]= Math.max(fValue[j], fValue[j - weight[i]] + value[i]);
-        System.out.printf("i=%d j=%d weight[i]=%d value[i]=%d fValue[j]=%d%n",i,j,weight[i],value[i],fValue[j]);
+        System.out.printf("i=%d j=%d weight[i]=%d value[i]=%d fValue[j]=%d%n fValue[j - weight[i]]=%d",i,j,weight[i],value[i],fValue[j],fValue[j - weight[i]]);
       }
 
     }
     return fValue[backpackCap];
   }
 }
+
